@@ -17,18 +17,11 @@
 
 */
 
-import Notifications from "views/Notifications.jsx";
-import Icons from "views/Icons.jsx";
-import Typography from "views/Typography.jsx";
-import TableList from "views/Tables.jsx";
-import Maps from "views/Map.jsx";
-import UserPage from "views/User.jsx";
-import UpgradeToPro from "views/Upgrade.jsx";
 import Dashboard from "views/Dashboard.jsx";
 import Perfil from "views/Perfil.jsx";
 import Adeudo from "views/Adeudo.jsx";
 import Pago from "views/Pago.jsx";
-import Calendario from "views/calendario.jsx";
+import Calendario from "views/Calendario.jsx";
 import Noticias from "views/Noticias.jsx";
 import PaseVisitantes from "views/PaseVisitantes.jsx";
 import Emergencia from "views/Emergencia.jsx";

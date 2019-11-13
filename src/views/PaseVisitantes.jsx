@@ -33,7 +33,7 @@ import {
   Col
 } from "reactstrap";
 
-class User extends React.Component {
+class PaseVisitantes extends React.Component {
   render() {
     return (
       <>
@@ -320,4 +320,4 @@ class User extends React.Component {
   }
 }
 
-export default User;
+export default PaseVisitantes;

@@ -29,7 +29,7 @@ import {
   Col
 } from "reactstrap";
 
-class Tables extends React.Component {
+class Noticias extends React.Component {
   render() {
     return (
       <>
