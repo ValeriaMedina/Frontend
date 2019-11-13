@@ -16,7 +16,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import Dashboard from "views/Dashboard.jsx";
+
 import Notifications from "views/Notifications.jsx";
 import Icons from "views/Icons.jsx";
 import Typography from "views/Typography.jsx";
@@ -24,7 +24,15 @@ import TableList from "views/Tables.jsx";
 import Maps from "views/Map.jsx";
 import UserPage from "views/User.jsx";
 import UpgradeToPro from "views/Upgrade.jsx";
-
+import Dashboard from "views/Dashboard.jsx";
+import Perfil from "views/Perfil.jsx";
+import Adeudo from "views/Adeudo.jsx";
+import Pago from "views/Pago.jsx";
+import Calendario from "views/calendario.jsx";
+import Noticias from "views/Noticias.jsx";
+import PaseVisitantes from "views/PaseVisitantes.jsx";
+import Emergencia from "views/Emergencia.jsx";
+import HomeAlone from "views/HomeAlone.jsx";
 var routes = [
   {
     path: "/dashboard",
@@ -34,53 +42,61 @@ var routes = [
     layout: "/admin"
   },
   {
-    path: "/icons",
-    name: "Icons",
-    icon: "nc-icon nc-diamond",
-    component: Icons,
-    layout: "/admin"
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "nc-icon nc-pin-3",
-    component: Maps,
-    layout: "/admin"
-  },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    icon: "nc-icon nc-bell-55",
-    component: Notifications,
-    layout: "/admin"
-  },
-  {
-    path: "/user-page",
-    name: "User Profile",
+    path: "/Perfil",
+    name: "Perfil",
     icon: "nc-icon nc-single-02",
-    component: UserPage,
+    component: Perfil,
     layout: "/admin"
   },
   {
-    path: "/tables",
-    name: "Table List",
-    icon: "nc-icon nc-tile-56",
-    component: TableList,
+    path: "/Adeudo",
+    name: "Adeudo",
+    icon: "nc-icon nc-bell-55",
+    component: Adeudo,
     layout: "/admin"
   },
   {
-    path: "/typography",
-    name: "Typography",
-    icon: "nc-icon nc-caps-small",
-    component: Typography,
+    path: "/Pago",
+    name: "Pago en linea",
+    icon: "nc-icon nc-credit-card",
+    component: Pago,
     layout: "/admin"
   },
+  {
+    path: "/Calendario",
+    name: "Calendario Terraza",
+    icon: "nc-icon nc-calendar-60",
+    component: Calendario,
+    layout: "/admin"
+  },
+  {
+    path: "/Noticias",
+    name: "Noticias",
+    icon: "nc-icon nc-world-2",
+    component: Noticias,
+    layout: "/admin"
+  },
+  {
+    path: "/PaseVisitantes",
+    name: "Pase Visitantes",
+    icon: "nc-icon nc-badge",
+    component: PaseVisitantes,
+    layout: "/admin"
+  },
+  {
+    path: "/Emergencia",
+    name: "Boton de Emergencia",
+    icon: "nc-icon nc-badge",
+    component: Emergencia,
+    layout: "/admin"
+  },
+
   {
     pro: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "nc-icon nc-spaceship",
-    component: UpgradeToPro,
+    path: "/HomeAlone",
+    name: "Home Alone-Premium",
+    icon: "nc-icon nc-camera-compact",
+    component: HomeAlone,
     layout: "/admin"
   }
 ];
