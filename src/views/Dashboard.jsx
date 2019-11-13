@@ -53,8 +53,8 @@ class Dashboard extends React.Component {
                     </Col>
                     <Col md="8" xs="7">
                       <div className="numbers">
-                        <p className="card-category">Capacity</p>
-                        <CardTitle tag="p">150GB</CardTitle>
+                        <p className="card-category">Recomendaciones</p>
+                        <CardTitle tag="p">4 Recomendados</CardTitle>
                         <p />
                       </div>
                     </Col>
@@ -79,7 +79,7 @@ class Dashboard extends React.Component {
                     </Col>
                     <Col md="8" xs="7">
                       <div className="numbers">
-                        <p className="card-category">Revenue</p>
+                        <p className="card-category">Mis Adeudos</p>
                         <CardTitle tag="p">$ 1,345</CardTitle>
                         <p />
                       </div>
@@ -89,7 +89,7 @@ class Dashboard extends React.Component {
                 <CardFooter>
                   <hr />
                   <div className="stats">
-                    <i className="far fa-calendar" /> Last day
+                    <i className="far fa-calendar" /> Fecha del Ultimo Pago
                   </div>
                 </CardFooter>
               </Card>
@@ -131,8 +131,8 @@ class Dashboard extends React.Component {
                     </Col>
                     <Col md="8" xs="7">
                       <div className="numbers">
-                        <p className="card-category">Followers</p>
-                        <CardTitle tag="p">+45K</CardTitle>
+                        <p className="card-category">Recomendados</p>
+                        <CardTitle tag="p">+4 nuevos</CardTitle>
                         <p />
                       </div>
                     </Col>
@@ -151,8 +151,8 @@ class Dashboard extends React.Component {
             <Col md="12">
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h5">Users Behavior</CardTitle>
-                  <p className="card-category">24 Hours performance</p>
+                  <CardTitle tag="h5">Estado Financiero</CardTitle>
+                  <p className="card-category">Ultima actualizacion</p>
                 </CardHeader>
                 <CardBody>
                   <Line
