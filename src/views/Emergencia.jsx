@@ -38,7 +38,7 @@ class Tables extends React.Component {
             <Col md="12">
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h4">Simple Table</CardTitle>
+                  <CardTitle tag="h4">Ultimas Noticias</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <Table responsive>
@@ -171,4 +171,4 @@ class Tables extends React.Component {
   }
 }
 
-export default Tables;
+export default Noticias;
