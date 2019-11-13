@@ -29,7 +29,7 @@ import {
   Col
 } from "reactstrap";
 
-class Tables extends React.Component {
+class Adeudo extends React.Component {
   render() {
     return (
       <>
@@ -171,4 +171,4 @@ class Tables extends React.Component {
   }
 }
 
-export default Tables;
+export default Adeudo;

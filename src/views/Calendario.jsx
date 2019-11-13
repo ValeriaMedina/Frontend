@@ -172,7 +172,7 @@ const MapWrapper = withScriptjs(
   ))
 );
 
-class Map extends React.Component {
+class Calendario extends React.Component {
   render() {
     return (
       <>
@@ -204,4 +204,4 @@ class Map extends React.Component {
   }
 }
 
-export default Map;
+export default Calendario;
