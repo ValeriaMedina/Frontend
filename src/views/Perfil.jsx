@@ -1,22 +1,6 @@
-/*!
-
-=========================================================
-* Paper Dashboard React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
+// import ReactDOM from "react-dom";
+// import Badge from "./components/Badge";
 
 // reactstrap components
 import {
@@ -66,33 +50,11 @@ class Perfil extends React.Component {
                 </CardBody>
                 <CardFooter>
                   <hr />
-                  <div className="button-container">
-                    <Row>
-                      <Col className="ml-auto" lg="3" md="6" xs="6">
-                        <h5>
-                          12 <br />
-                          <small>Files</small>
-                        </h5>
-                      </Col>
-                      <Col className="ml-auto mr-auto" lg="4" md="6" xs="6">
-                        <h5>
-                          2GB <br />
-                          <small>Used</small>
-                        </h5>
-                      </Col>
-                      <Col className="mr-auto" lg="3">
-                        <h5>
-                          24,6$ <br />
-                          <small>Spent</small>
-                        </h5>
-                      </Col>
-                    </Row>
-                  </div>
                 </CardFooter>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h4">Team Members</CardTitle>
+                  <CardTitle tag="h4">Miembros Administrativos</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <ul className="list-unstyled team-members">
@@ -190,71 +152,69 @@ class Perfil extends React.Component {
             <Col md="8">
               <Card className="card-user">
                 <CardHeader>
-                  <CardTitle tag="h5">Edit Profile</CardTitle>
+                  <CardTitle tag="h5">Editar Perfil</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <Form>
                     <Row>
-                      <Col className="pr-1" md="5">
+                      <Col className="pr-1" md="4">
                         <FormGroup>
-                          <label>Company (disabled)</label>
+                          <label>Nombre</label>
                           <Input
-                            defaultValue="Creative Code Inc."
-                            disabled
-                            placeholder="Company"
+                            defaultValue=""
+                            placeholder=""
                             type="text"
                           />
                         </FormGroup>
                       </Col>
-                      <Col className="px-1" md="3">
+                      <Col className="px-1" md="4">
                         <FormGroup>
-                          <label>Username</label>
+                          <label>Apellido Paterno</label>
                           <Input
-                            defaultValue="michael23"
-                            placeholder="Username"
+                            defaultValue=""
+                            placeholder=""
                             type="text"
                           />
                         </FormGroup>
                       </Col>
                       <Col className="pl-1" md="4">
                         <FormGroup>
-                          <label htmlFor="exampleInputEmail1">
-                            Email address
-                          </label>
-                          <Input placeholder="Email" type="email" />
-                        </FormGroup>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col className="pr-1" md="6">
-                        <FormGroup>
-                          <label>First Name</label>
+                          <label>Apellido Materno</label>
                           <Input
-                            defaultValue="Chet"
-                            placeholder="Company"
-                            type="text"
-                          />
-                        </FormGroup>
-                      </Col>
-                      <Col className="pl-1" md="6">
-                        <FormGroup>
-                          <label>Last Name</label>
-                          <Input
-                            defaultValue="Faker"
-                            placeholder="Last Name"
+                            defaultValue=""
+                            placeholder=""
                             type="text"
                           />
                         </FormGroup>
                       </Col>
                     </Row>
                     <Row>
-                      <Col md="12">
+                      <Col className="pr-1" md="5">
                         <FormGroup>
-                          <label>Address</label>
+                          <label>Dirección</label>
                           <Input
-                            defaultValue="Melbourne, Australia"
-                            placeholder="Home Address"
+                            defaultValue="Princesa Erendira"
+                            placeholder=""
                             type="text"
+                          />
+                        </FormGroup>
+                      </Col>
+                      <Col className="px-1" md="5">
+                        <FormGroup>
+                          <label>Colonia</label>
+                          <Input
+                            defaultValue="Valle Escondido"
+                            placeholder=""
+                            type="text"
+                          />
+                        </FormGroup>
+                      </Col>
+                      <Col className="pl-1" md="2">
+                        <FormGroup>
+                          <label>#</label>
+                          <Input
+                            defaultValue="210"
+                            type="number"
                           />
                         </FormGroup>
                       </Col>
@@ -262,39 +222,28 @@ class Perfil extends React.Component {
                     <Row>
                       <Col className="pr-1" md="4">
                         <FormGroup>
-                          <label>City</label>
+                          <label>Ciudad</label>
                           <Input
-                            defaultValue="Melbourne"
-                            placeholder="City"
+                            defaultValue=""
+                            placeholder=""
                             type="text"
                           />
                         </FormGroup>
                       </Col>
                       <Col className="px-1" md="4">
                         <FormGroup>
-                          <label>Country</label>
+                          <label>País</label>
                           <Input
-                            defaultValue="Australia"
-                            placeholder="Country"
+                            defaultValue=""
+                            placeholder=""
                             type="text"
                           />
                         </FormGroup>
                       </Col>
                       <Col className="pl-1" md="4">
                         <FormGroup>
-                          <label>Postal Code</label>
-                          <Input placeholder="ZIP Code" type="number" />
-                        </FormGroup>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col md="12">
-                        <FormGroup>
-                          <label>About Me</label>
-                          <Input
-                            type="textarea"
-                            defaultValue="Oh so, your weak rhyme You doubt I'll bother, reading into it"
-                          />
+                          <label>Código Postal</label>
+                          <Input placeholder="" />
                         </FormGroup>
                       </Col>
                     </Row>
@@ -305,7 +254,7 @@ class Perfil extends React.Component {
                           color="primary"
                           type="submit"
                         >
-                          Update Profile
+                          Guardar
                         </Button>
                       </div>
                     </Row>

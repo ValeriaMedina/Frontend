@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Dashboard React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -182,16 +164,16 @@ class Header extends React.Component {
                   </p>
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem tag="a">Action</DropdownItem>
-                  <DropdownItem tag="a">Another Action</DropdownItem>
-                  <DropdownItem tag="a">Something else here</DropdownItem>
+                  <DropdownItem tag="a">Nuevo(s)</DropdownItem>
+                  <DropdownItem tag="a">Leídos</DropdownItem>
+                  <DropdownItem tag="a">Sin Leer</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
               <NavItem>
                 <Link to="#pablo" className="nav-link btn-rotate">
                   <i className="nc-icon nc-settings-gear-65" />
                   <p>
-                    <span className="d-lg-none d-md-block">Account</span>
+                    <span className="d-lg-none d-md-block">Ajustes</span>
                   </p>
                 </Link>
               </NavItem>
