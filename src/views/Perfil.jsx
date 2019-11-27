@@ -1,6 +1,5 @@
 import React from "react";
-// import ReactDOM from "react-dom";
-// import Badge from "./components/Badge";
+// import ProfileForm from "../components/ProfileForm";
 
 // reactstrap components
 import {
@@ -18,13 +17,34 @@ import {
 } from "reactstrap";
 
 class Perfil extends React.Component {
+  state= {};
+
+  handleChange = e => {
+    // console.log({
+    //   name:e.target.name,
+    //   value: e.target.value});
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  handleClick = e => {
+    console.log("Button was clicked");
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    console.log("Form was submited")
+    console.log(this.state)
+  };
+
   render() {
     return (
       <>
         <div className="content">
           <Row>
             <Col md="4">
-              <Card className="card-user">
+            <Card className="card-user">
                 <div className="image">
                   <img
                     alt="..."
@@ -39,7 +59,7 @@ class Perfil extends React.Component {
                         className="avatar border-gray"
                         src={require("assets/img/mike.jpg")}
                       />
-                      <h5 className="title">Chet Faker</h5>
+                    <h5 className="title">Chet Faker</h5>
                     </a>
                     <p className="description">@chetfaker</p>
                   </div>
@@ -155,15 +175,17 @@ class Perfil extends React.Component {
                   <CardTitle tag="h5">Editar Perfil</CardTitle>
                 </CardHeader>
                 <CardBody>
-                  <Form>
+                  <Form onSubmit={this.handleSubmit}>
                     <Row>
                       <Col className="pr-1" md="4">
                         <FormGroup>
                           <label>Nombre</label>
                           <Input
-                            defaultValue=""
-                            placeholder=""
+                            onChange={this.handleChange}
+                            name="firstName"
                             type="text"
+                            value={this.state.firstName}
+                            required 
                           />
                         </FormGroup>
                       </Col>
@@ -171,9 +193,11 @@ class Perfil extends React.Component {
                         <FormGroup>
                           <label>Apellido Paterno</label>
                           <Input
-                            defaultValue=""
-                            placeholder=""
+                            onChange={this.handleChange}
+                            name="middleName"
                             type="text"
+                            value={this.state.middleName}
+                            required 
                           />
                         </FormGroup>
                       </Col>
@@ -181,9 +205,11 @@ class Perfil extends React.Component {
                         <FormGroup>
                           <label>Apellido Materno</label>
                           <Input
-                            defaultValue=""
-                            placeholder=""
+                            onChange={this.handleChange}
+                            name="lastName"
                             type="text"
+                            value={this.state.lastName}
+                            required 
                           />
                         </FormGroup>
                       </Col>
@@ -193,9 +219,12 @@ class Perfil extends React.Component {
                         <FormGroup>
                           <label>Dirección</label>
                           <Input
+                            onChange={this.handleChange}
                             defaultValue="Princesa Erendira"
-                            placeholder=""
+                            name="adress"
                             type="text"
+                            value={this.state.adress}
+                            required 
                           />
                         </FormGroup>
                       </Col>
@@ -203,9 +232,12 @@ class Perfil extends React.Component {
                         <FormGroup>
                           <label>Colonia</label>
                           <Input
+                            onChange={this.handleChange}
                             defaultValue="Valle Escondido"
-                            placeholder=""
+                            name="colony"
                             type="text"
+                            value={this.state.colony}
+                            required 
                           />
                         </FormGroup>
                       </Col>
@@ -213,8 +245,12 @@ class Perfil extends React.Component {
                         <FormGroup>
                           <label>#</label>
                           <Input
+                            onChange={this.handleChange}
                             defaultValue="210"
+                            name="houseNumber"
                             type="number"
+                            value={this.state.houseNumber}
+                            required 
                           />
                         </FormGroup>
                       </Col>
@@ -224,9 +260,12 @@ class Perfil extends React.Component {
                         <FormGroup>
                           <label>Ciudad</label>
                           <Input
+                            onChange={this.handleChange}
                             defaultValue=""
-                            placeholder=""
+                            name="city"
                             type="text"
+                            value={this.state.city}
+                            required 
                           />
                         </FormGroup>
                       </Col>
@@ -234,22 +273,32 @@ class Perfil extends React.Component {
                         <FormGroup>
                           <label>País</label>
                           <Input
+                            onChange={this.handleChange}
                             defaultValue=""
-                            placeholder=""
+                            name="country"
                             type="text"
+                            value={this.state.country}
+                            required 
                           />
                         </FormGroup>
                       </Col>
                       <Col className="pl-1" md="4">
                         <FormGroup>
                           <label>Código Postal</label>
-                          <Input placeholder="" />
+                          <Input
+                          onChange={this.handleChange}
+                          name="postalCode"
+                          type="text"
+                          value={this.state.postalCode}
+                          required 
+                          />
                         </FormGroup>
                       </Col>
                     </Row>
                     <Row>
                       <div className="update ml-auto mr-auto">
                         <Button
+                          onClick={this.handleClick}
                           className="btn-round"
                           color="primary"
                           type="submit"
